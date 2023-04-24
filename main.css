@@ -1,5 +1,22 @@
+:root{
+    --nav-background: solid rgb(247, 0, 255);
+    --nav-border: .5em solid rgb(255, 192, 252); 
+
+}
+
 nav {
-    background-color: #d4d4d4;
+    display:flex;
+    background-color: var(--nav-background);
+    border: var(--nav-border);
+    font-size: 2rem ;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+nav:is(ul,li){
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul,
@@ -15,9 +32,9 @@ nav > ul {
 }
 
 nav > ul > li {
-    background-color: #9e9e9e;
+    background-color:  rgb(225, 0, 255);
     list-style: none;
-    border: 1px solid red;
+    border: 1px  rgb(225, 0, 255);
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -32,3 +49,12 @@ nav ul > li > ul {
 nav ul > li:hover > ul {
     display: block;
 } 
+
+nav div {
+    position: relative;
+    
+}
+.logo{
+    height: 5vw;
+
+}
