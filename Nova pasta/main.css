@@ -1,0 +1,81 @@
+ body{
+   box-sizing: border-box;
+   margin: 0;
+   height: 100vh;
+   border: 12px solid whitesmoke;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ div.genius{
+    background-color: gray;
+    border: 12px solid gray;
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+ }
+
+ div.genius>* :not(.pontuacao){
+
+   cursor: pointer;
+ }
+
+
+ div.genius > :nth-child(1){
+    border-radius: 100% 0 0 0;
+    background-color: darkgreen;
+ }
+ div.genius > :nth-child(1).on,
+ div.genius > :nth-child(1):hover {
+   border-radius: 100% 0 0 0;
+   background-color: green;
+}
+
+ 
+ div.genius > :nth-child(2){
+    border-radius: 0 100% 0 0;
+    background-color: darkred;
+ }
+ div.genius > :nth-child(2).on,
+ div.genius > :nth-child(2):hover{
+   border-radius: 0 100% 0 0;
+   background-color: red;
+}
+
+ div.genius > :nth-child(3){
+    border-radius: 0 0 0 100%;
+    background-color: orange;
+ }
+ div.genius > :nth-child(3).on,
+ div.genius > :nth-child(3):hover{
+   border-radius: 0 0 0 100%;
+   background-color: yellow;
+}
+
+
+ div.genius > :nth-child(4){
+    border-radius:  0 0 100% 0;
+    background-color: darkblue;
+ }
+ div.genius > :nth-child(4).on,
+ div.genius > :nth-child(4):hover{
+   border-radius:  0 0 100% 0;
+   background-color: blue;
+}
+
+
+ div.pontuacao{
+    background-color: gray;
+    position: absolute;
+    inset: 30%;
+    border-radius: 50% 50% 50% 50%;
+ }
