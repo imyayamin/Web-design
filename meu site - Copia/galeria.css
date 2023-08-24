@@ -1,0 +1,20 @@
+.galeria-imagens {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    gap: 1.5rem;
+    margin: auto;
+    place-items: center;
+    margin-bottom: 200vh;
+    cursor: pointer;
+}
+
+
+.galeria-imagens img{
+    height: 90%;
+    width: 100%; 
+    box-shadow: 0px 2px 6px white;
+}

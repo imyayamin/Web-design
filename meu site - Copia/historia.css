@@ -1,0 +1,15 @@
+body > .texto {
+    /* background-image: url("bandeira.png"); */
+    font-size: 21px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    padding: 20px;
+    margin: 20px;
+    border-top: 15px solid rgb(255, 99, 43);
+    border-right: 15px solid rgb(255, 99, 43);
+    border-bottom: 15px solid rgb(255, 99, 43);
+    border-left: 15px solid rgb(255, 99, 43);
+
+  }
