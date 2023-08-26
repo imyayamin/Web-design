@@ -1,0 +1,63 @@
+[
+    {
+      "pergunta": "1. Que ano o risadinha nasceu?",
+      "correta": 2,
+      "alternativas": [2006, 2007, 2008,2009]
+    },
+    {
+      "pergunta": "2. Qual o livro favorito do risadinha?",
+      "correta": 0,
+      "alternativas": ["six of crows", "as quatro rainhas mortas", "sua alteza real", "manual de assassinato para boas garotas"]
+    },
+    {
+        "pergunta": "3. Quem sera o personagem do risadinha na peça de gil vicente?",
+        "correta": 3,
+        "alternativas": ["diabo", "anjo", "marta gil", "tafuldido"]
+    },
+
+    {
+      "pergunta": "4. Qual a cantora favorita do risadinha?",
+      "correta": 2,
+      "alternativas": ["taylor swift", "lana del rey", "fletcher", "clairo"]
+    },
+
+    {
+      "pergunta": "5. Qual o talento do risadinha?",
+      "correta": 2,
+      "alternativas":["dançar", "cantar", "infernizar a vida alheia", "escrever"]
+    },
+
+    {
+      "pergunta": "6. Qual o filme favorito do risadinha?",
+      "correta":1,
+      "alternativas": ["guerra infinita","my first summer","ocean's 8","barbie"]
+    },
+
+    {
+      "pergunta": "7. Quantos irmãos tem o risadinha?",
+      "correta":3,
+      "alternativas":[1, 2, 3, "nenhum, o risadinha é um lobo solitário"]
+    },
+    
+    {
+      "pergunta": "8. Qual materia o risadinha manja?",
+      "correta": 0,
+      "alternativas":["quimica", "matematica", "biologia", "ingles" ]
+    },
+
+    {
+      "pergunta": "9. Em qual parte do corpo fica o sinal de nascença do risadinha?",
+      "correta": 1,
+      "alternativas":["perna","ombro","barriga","costas"]
+    },
+
+    {
+      "pergunta": "10. O risadinha acha que a vida é o que?",
+      "correta": 1,
+      "alternativas":["mar de rosas", "brincadeira", "vadiagem", "coisa seria"]
+    }
+
+
+
+    
+  ]
