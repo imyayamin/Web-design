@@ -1,0 +1,91 @@
+[
+    {
+      "pergunta": "1. Em qual ano aconteceu o protesto no ferro's bar?",
+      "correta": 2,
+      "alternativas": [1981, 1982, 1983, 1984]
+    },
+    {
+      "pergunta": "2. Qual o dia do orgulho lésbico?",
+      "correta": 0,
+      "alternativas": ["19/08", "20/08", "19/09", "20/09"]
+    },
+    {
+        "pergunta": "3. Quem deu origem ao termo?",
+        "correta": 3,
+        "alternativas": ["Emily Dickinson", "Girl in red", "FLETCHER", "Safo"]
+    },
+
+
+    {
+      "pergunta": "4. Qual o nome do jornal criado pelo GALF?",
+      "correta": 2,
+      "alternativas": ["mulhercomulher", "chupaxoxota", "chanacomchana", "cheirodecouro"]
+    },
+
+
+    {
+      "pergunta": "5. Qual a data do 1° seminário nacional de lésbicas?",
+      "correta": 0,
+      "alternativas":["29/08/1996", "29/08/1997", "28/08/1995", "27/08/1999"]
+    },
+
+
+    {
+      "pergunta": "6. Qual a definição do termo lésbica?",
+      "correta":1,
+      "alternativas": ["mulher que sente atração afetiva e/ou sexual por um homem","mulher que sente atração afetiva e/ou sexual por outra mulher","homem que sente atração afetiva e/ou sexual por outro homem","homem que sente atração afetiva e/ou sexual por uma mulher"]
+    },
+
+    {
+      "pergunta": "7. Em que ano aconteceu o primeiro casamento lésbico?",
+      "correta":3,
+      "alternativas": ["1904","1903","1902","1901"]
+    },
+
+    {
+      "pergunta": "8. Quem foram as primeiras lésbicas a se casarem?",
+      "correta": 0,
+      "alternativas":["Marcela e Elisa", "Marcela e Elsa", "Bianca e Yasmin", "Ana e Erika"]
+    },
+
+    
+    {
+      "pergunta": "9. Qual personagem é conhecida por ser uma ladra/gatuna?",
+      "correta":0,
+      "alternativas": ["Elodie","Robin","Velma","Lexa"]
+    },
+
+    {
+      "pergunta": "10. Qual personagem é conhecida por ser xerife?",
+      "correta":2,
+      "alternativas": ["Lexa","Sydney","Nicole","Kate"]
+    },
+
+    {
+      "pergunta": "11. Qual a cantora que escreveu uma música para a atual da ex?",
+      "correta":2,
+      "alternativas": ["Carol Biazin","girl in red","FLETCHER"]
+    },
+
+    {
+      "pergunta": "12. Qual casal é caracterizado como enemies to lovers?",
+      "correta":2,
+      "alternativas": ["Sam e Deena","Tara e Darcy","Catra e Adora"]
+    },
+
+
+    {
+      "pergunta": "13. Qual atriz fez parte da franquia de panico?",
+      "correta":0,
+      "alternativas": ["Jasmin Savoy Brown","Jodie Foster","Nanda Costa"]
+    },
+
+    {
+      "pergunta": "14. Qual dessas personagens é a favorita da Yasmin?",
+      "correta":2,
+      "alternativas": ["Catra","Adora","Amity"]
+    }
+
+   
+  ]
+

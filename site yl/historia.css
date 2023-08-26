@@ -1,0 +1,43 @@
+:root {
+  --nav-background: #ED4C67;
+  --nav-border: .5rem solid #B53471;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--nav-border);
+  background: var(--nav-background);
+  border-radius: 5px;
+  font-size: 3rem;
+  padding: .5em;
+  margin: 20px;
+}
+
+
+nav > .logo {
+  height: 13rem;
+}
+
+
+body > .texto {
+    /* background-image: url("bandeira.png"); */
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    padding: 20px;
+    margin: 20px;
+    border-top: 15px solid rgb(255, 99, 43);
+    border-right: 15px solid rgb(255, 99, 43);
+    border-bottom: 15px solid rgb(255, 99, 43);
+    border-left: 15px solid rgb(255, 99, 43);
+
+  }
+
+  body  {
+    background-image: url("ceu.avif"); 
+    
+  }
