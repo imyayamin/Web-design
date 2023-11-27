@@ -1,0 +1,433 @@
+:root {
+    --width-main-menu: 20rem;
+}
+
+.menu-hamburger {
+    --bt-size: 2.5rem;
+    --bt-padding: .4rem;
+    height: var(--bt-size);
+    width: var(--bt-size);
+    cursor: pointer;
+    position: fixed;
+    left: 3em;
+    bottom: 3em;
+    z-index: 1;
+    transition: .3s;
+    background-color: transparent;
+    border: none;
+    top: 1.5rem;
+}
+
+
+.menu-hamburger>span,
+.menu-hamburger::before,
+.menu-hamburger::after {
+    content: '';
+    position: absolute;
+    left: var(--bt-padding);
+    right: var(--bt-padding);
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+    font-size: 40px
+}
+
+.menu-hamburger::before {
+    top: var(--bt-padding);
+}
+
+.menu-hamburger::after {
+    bottom: var(--bt-padding);
+}
+
+.menu-hamburger.opened {
+    left: 0;
+    transform: translateX(calc(var(--width-main-menu) - (var(--bt-size) / 2)));
+}
+
+.menu-hamburger.opened::before {
+    transform-origin: 0 0;
+    transform: rotate(45deg) scaleX(1.35);
+}
+
+.menu-hamburger.opened::after {
+    transform-origin: 0 0;
+    transform: rotate(-45deg) scaleX(1.4);
+}
+
+.menu-hamburger.opened>span {
+    transform: scale(0);
+}
+
+/* ------------------------------- */
+
+nav.main-menu {
+    position: fixed;
+    background-color: #201d1d;
+    width: var(--width-main-menu);
+    left: 0;
+    top: 0;
+    height: 100dvh;
+    border-radius: 2px;
+    transition: .3s;
+    transform: translateX(-100%);
+    overflow: auto;
+}
+
+nav.main-menu a {
+    display: block;
+    margin: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: #FFF;
+    background-color: #201d1d;
+    position: relative;
+    text-align: center;
+    transition: .3s;
+}
+
+nav.main-menu a:hover {
+    color: red;
+}
+
+a::after {
+    content: " ";
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+a::after {
+    width: 100%;
+}
+
+
+nav.main-menu.opened {
+    transform: translateX(0%);
+}
+
+/* ------------------Conteúdo da Página----------------- */
+
+* {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    ;
+}
+@font-face {
+    font-family: "Cheltenham Bold Condensed";
+    src: url("https://db.onlinewebfonts.com/t/6ed5abc35612bebe195c849e9b716d71.eot");
+    src: url("https://db.onlinewebfonts.com/t/6ed5abc35612bebe195c849e9b716d71.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6ed5abc35612bebe195c849e9b716d71.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6ed5abc35612bebe195c849e9b716d71.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6ed5abc35612bebe195c849e9b716d71.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6ed5abc35612bebe195c849e9b716d71.svg#Cheltenham Bold Condensed")format("svg");
+}
+
+html,
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.apresentacao img {
+    width: 50%;
+    float: right;
+    margin-top: 200px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* se você quiser alinhar verticalmente */
+    justify-content: space-between; /* se você quiser algum espaço entre o título e a imagem */
+}
+
+.titulo-principal {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 120px;
+    color: white;
+    text-align: start;
+    margin-left: 180px;
+    margin-top: 180px;
+}
+
+.sua-imagem {
+    width: 50%;
+    float: right;
+    margin-top: 200px;
+    margin-right: 100px;
+    cursor: pointer;
+    animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.titulo-principal::after {
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-top: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.titulo-principal:hover::after {
+    width: 100%;
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.fecharDialog {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+header,
+main,
+footer {
+    padding: 1rem;
+}
+
+header {
+    height: 1200px;
+}
+
+main {
+    min-height: 4600px;
+    width: 100%;
+}
+
+
+
+.container02 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.conteudo {
+    display: flex; /* Coloca a imagem e o texto lado a lado */
+}
+
+.carol img {
+    width: 90%; 
+    margin-right: 40px;
+    margin-top: -100px;
+    transition: 0.6s;
+    cursor: pointer;/* Adiciona algum espaço entre a imagem e o texto */
+}
+
+.carol img:hover {
+    transform: scale(1.1);
+}
+
+.themarvels {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    max-width: 40%;
+    line-height: 50px;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+h1.sobre {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 120px;
+    color: white;
+    text-align: right;
+    margin-right: 300px;
+    margin-top: 180px;
+}
+
+h1.personagens {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    margin-top: 180px;  
+}
+
+.container03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carol {
+    width: 50%;
+    margin-top: 100px;
+    margin-right: 140px;
+    float: right;
+    cursor: pointer;
+}
+
+.sobrecarol {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    max-width: 40%;
+    line-height: 50px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+#h2-carol {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 80px;
+    color: white;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.container04 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+img.kamala {
+    width: 35%;
+    margin-top: 240px;
+    margin-left: 150px;
+    float: left;
+    cursor: pointer;
+}
+
+.sobrekamala {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    max-width: 40%;
+    line-height: 50px;
+    margin-right: 90px;
+    margin-top: 90px;
+    float: right;
+}
+
+#h2-kamala {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 80px;
+    color: white;
+    text-align: right;
+    margin-right: 150px;
+    margin-top: 150px;
+    float: right;
+}
+
+.container05 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.monica {
+    width: 45%;
+    margin-top: 260px;
+    margin-right: 100px;
+    float: right;
+    cursor: pointer;
+}
+
+.sobremonica {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    max-width: 40%;
+    line-height: 50px;
+    margin-left: 130px;
+    margin-top: 130px;
+}
+
+#h2-monica {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 80px;
+    color: white;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    border-radius: 50%;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.realizacao {
+    font-family: "Cheltenham Bold Condensed";
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    max-width: 40%;
+    line-height: 50px;
+    margin-left: 10px;
+    margin-bottom: 200px;
+
+}
+
+.text-container {
+    margin-right: 250px;
+    margin-top: 150vw;
+}
+
+.text-container p {
+    font-size: 2.5rem;
+}
