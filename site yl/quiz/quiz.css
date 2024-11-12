@@ -10,15 +10,16 @@
 body {
     display: flex;
     height: 100vh;
-    justify-content: center;
+    justify-content: center;  
     align-items: center;
     background-image: url("amity-blight-lesbian.gif"); 
+    background-position: center;
 
 }
 
-
 main {
-    background-color: #FFB6C1;
+    background-image: url(gatL.gif);
+    background-position: center;
     border-radius: 10px;
     padding: 3rem;
     width: 100%;
