@@ -1,0 +1,17 @@
+.menu-hamburguer {
+    --size: 10rem;
+    height: var(--size);
+    width: var(--size);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: calc(var(--size) / 5);
+    cursor: pointer;
+}
+    
+.menu-hamburguer span {
+    display: block;
+    width: 100%;
+    height: calc(var(--size) / 13);
+    background-color: black;
+}
